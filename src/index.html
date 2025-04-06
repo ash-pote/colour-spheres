@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wobbly Sphere</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <button id="connectButton">Connect</button>
+      <!-- <p id="output">0.5</p> -->
+    </div>
+
+    <label for="distance">Distance: <span id="output">0.1</span></label
+    ><br />
+    <input type="range" id="distance" min="0" max="1" step="0.01" value="0" />
+
+    <form id="check">
+      <label>
+        <input type="radio" name="colour" value="Red" checked />Protanopia: No
+        Red </label
+      ><br />
+    </form>
+
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./arduino.js"></script>
+    <script type="module" src="./slider.js"></script>
+  </body>
+</html>
